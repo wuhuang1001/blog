@@ -2,7 +2,7 @@ import type * as Preset from '@docusaurus/preset-classic'
 import type { Config } from '@docusaurus/types'
 import { themes } from 'prism-react-renderer'
 // import social from './data/social'
-import { GiscusConfig } from './src/components/Comment'
+// import { GiscusConfig } from './src/components/Comment'
 
 const config: Config = {
   title: '鱼桶的小站',
@@ -98,7 +98,7 @@ const config: Config = {
             { label: '博客', to: 'blog' },
             { label: '归档', to: 'blog/archive' },
             // { label: '技术笔记', to: 'docs/skill' },
-            { label: '实战项目', to: 'project' },
+            // { label: '实战项目', to: 'project' },
             // { label: '前端示例', to: 'https://example.kuizuo.cn' },
           ],
         },
@@ -163,16 +163,16 @@ const config: Config = {
       ],
     },
 
-    // TODO删除评论服务
+    // 删除评论服务
     // 评论服务
-    giscus: {
-      repo: 'kuizuo/blog',
-      repoId: 'MDEwOlJlcG9zaXRvcnkzOTc2MjU2MTI=',
-      category: 'General',
-      categoryId: 'DIC_kwDOF7NJDM4CPK95',
-      theme: 'light',
-      darkTheme: 'dark_dimmed',
-    } satisfies Partial<GiscusConfig>,
+    // giscus: {
+    //   repo: 'kuizuo/blog',
+    //   repoId: 'MDEwOlJlcG9zaXRvcnkzOTc2MjU2MTI=',
+    //   category: 'General',
+    //   categoryId: 'DIC_kwDOF7NJDM4CPK95',
+    //   theme: 'light',
+    //   darkTheme: 'dark_dimmed',
+    // } satisfies Partial<GiscusConfig>,
 
     tableOfContents: {
       minHeadingLevel: 2,
@@ -231,22 +231,25 @@ const config: Config = {
     */
     // TODO 搞清楚这里的链接是做什么用的
     [
-      './src/plugin/plugin-content-blog', // 为了实现全局 blog 数据，必须改写 plugin-content-blog 插件
+      './src/plugin/plugin-content-blog', // 插件的路径，这里使用了一个定制版本的 'plugin-content-blog'
       {
-        path: 'blog',
+        path: 'blog', // 博客文章存放的相对路径
+        // editUrl 函数用于生成文章的编辑链接。这个链接会在每篇文章页面上显示，点击后可以直接跳转到 GitHub 上的编辑页面。
         editUrl: ({ locale, blogDirPath, blogPath, permalink }) =>
-          `https://github.com/kuizuo/blog/edit/main/${blogDirPath}/${blogPath}`,
-        editLocalizedFiles: false,
-        blogDescription: '代码人生：编织技术与生活的博客之旅',
-        blogSidebarCount: 10,
-        blogSidebarTitle: 'Blogs',
-        postsPerPage: 10,
-        showReadingTime: true,
+          `https://github.com/wuhuang1001/blog/edit/main/${blogDirPath}/${blogPath}`,
+        editLocalizedFiles: false, // 如果设置为 false，将在所有版本的文档中使用一样的 editUrl，而不是为每种语言版本的文档使用不同的 editUrl
+        blogDescription: '代码人生：编织技术与生活的博客之旅', // 博客的描述
+        blogSidebarCount: 10, // 博客侧边栏显示的文章数量
+        blogSidebarTitle: 'Blogs', // 博客侧边栏的标题
+        postsPerPage: 10, // 每页显示的文章数量
+        showReadingTime: true, // 是否在每篇文章上显示预计的阅读时间
+        // 计算阅读时间的函数。这里设置了每分钟阅读300个词。
         readingTime: ({ content, frontMatter, defaultReadingTime }) =>
           defaultReadingTime({ content, options: { wordsPerMinute: 300 } }),
+        // RSS 订阅源的选项
         feedOptions: {
-          type: 'all',
-          title: '鱼桶',
+          type: 'all', // 订阅类型，'all' 表示订阅所有文章
+          title: '鱼桶', // 订阅源的标题
         },
       },
     ],

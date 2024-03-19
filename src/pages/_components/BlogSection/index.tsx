@@ -64,7 +64,7 @@ export default function BlogSection(): JSX.Element {
   })
 
   // TODO 测试用值
-  blogData.postNum = 0
+  // blogData.postNum = 0
 
   if (blogData.postNum === 0) {
     return (
