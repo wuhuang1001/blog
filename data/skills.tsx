@@ -2,6 +2,11 @@ import { IconProps } from '@iconify/react'
 
 const SKILLS: IconProps[] = [
   {
+    icon: 'logos:java',
+    style: { left: '60%', top: '15%'},
+  },
+  /*
+  {
     icon: 'logos:vue',
     style: { left: '1%', top: '1%' },
   },
@@ -49,15 +54,17 @@ const SKILLS: IconProps[] = [
     icon: 'logos:tailwindcss-icon',
     style: { top: '30%', left: '90%' },
   },
-
+  */
   {
     icon: 'logos:visual-studio-code',
-    style: { bottom: '25%', right: '5%' },
+    style: { right: '15%', top: '25%'},
   },
+  /*
   {
     icon: 'logos:docusaurus',
     style: { bottom: '1%', left: '1%' },
   },
+  */
 ]
 
 export default SKILLS

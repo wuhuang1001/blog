@@ -1,4 +1,5 @@
 export const projects: Project[] = [
+  /*
   {
     title: '愧怍的小站',
     description: '🦖 基于 Docusaurus 静态网站生成器实现个人博客',
@@ -72,6 +73,7 @@ export const projects: Project[] = [
     tags: ['opensource'],
     type: 'toy',
   },
+  */
   // {
   //   title: 'Image Hosting',
   //   description: '🖼️ 使用 Supabase 搭建一个简易图床',
@@ -91,6 +93,7 @@ export const projects: Project[] = [
   //   type: 'web',
   // },
   // personal
+  /*
   {
     title: 'vscode-extension',
     description: 'vscode 插件的样品',
@@ -109,6 +112,7 @@ export const projects: Project[] = [
     tags: ['opensource', 'design'],
     type: 'personal',
   },
+  */
   // {
   //   title: '@kuizuo/utils',
   //   description: '整理 JavaScript / TypeScript 的相关工具函数',
@@ -141,6 +145,7 @@ export const projects: Project[] = [
   //   type: 'commerce',
   // },
   // other
+  /*
   {
     title: '@kuizuo/http',
     description: '基于 Axios 封装的 HTTP 类库',
@@ -169,6 +174,7 @@ export const projects: Project[] = [
     tags: ['opensource'],
     type: 'other',
   },
+  */
 ]
 
 export type Tag = {
