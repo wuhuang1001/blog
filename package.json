@@ -2,16 +2,15 @@
   "name": "blog",
   "version": "3.0.0",
   "author": {
-    "url": "https://github.com/kuizuo",
-    "email": "hi@kuizuo.cn",
-    "name": "Kuizuo"
+    "url": "https://github.com/wuhuang1001",
+    "email": "publicfish2024@163.com",
+    "name": "fish"
   },
   "repository": {
-    "url": "https://github.com/kuizuo/blog",
+    "url": "https://github.com/fish/blog",
     "type": "git"
   },
-  "homepage": "https://kuizuo.cn",
-  "license": "MIT",
+  "homepage": "https://www.fishcask.space",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
