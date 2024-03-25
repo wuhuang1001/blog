@@ -74,6 +74,6 @@ hide_table_of_contents: false
 "FileName"=""
 ```
 
-观察之后发现其主要区别在于`.md`的默认值设置为`Typora.md`，设置为`Markdown`或`Markdown.md`均无效，原因未知
+观察之后发现其主要区别在于`.md`的默认值设置为`Typora.md`，设置为`Markdown`或`Markdown.md`均无效
 
-而将默认值设置为`.md`会导致右键新建时无限重启`explorer`，原因未知
+而将默认值设置为`.md`会导致右键新建时无限重启`explorer`

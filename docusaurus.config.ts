@@ -130,11 +130,11 @@ const config: Config = {
         },
       ],
     },
-    algolia: {
-      appId: 'GV6YN1ODMO',
-      apiKey: '50303937b0e4630bec4a20a14e3b7872',
-      indexName: 'kuizuo',
-    },
+    // algolia: {
+    //   appId: 'GV6YN1ODMO',
+    //   apiKey: '50303937b0e4630bec4a20a14e3b7872',
+    //   indexName: 'kuizuo',
+    // },
     prism: {
       theme: themes.oneLight,
       darkTheme: themes.oneDark,
@@ -186,6 +186,8 @@ const config: Config = {
         dark: 'rgb(50, 50, 50)',
       },
     },
+  
+  
   } satisfies Preset.ThemeConfig,
   presets: [
     [
@@ -267,7 +269,21 @@ const config: Config = {
     'https://cdn.jsdelivr.net/npm/misans@4.0.0/lib/Normal/MiSans-Normal.min.css',
     'https://cdn.jsdelivr.net/npm/misans@4.0.0/lib/Normal/MiSans-Semibold.min.css',
   ],
-  
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        // ... Your options.
+        // `hashed` is recommended as long-term-cache of index file is possible.
+        hashed: true,
+        // For Docs using Chinese, The `language` is recommended to set to:
+        // ```
+        language: ["zh"],
+        // ```
+      }),
+    ],
+  ],
   i18n: {
     defaultLocale: 'zh-CN',
     locales: ['en', 'zh-CN'],
