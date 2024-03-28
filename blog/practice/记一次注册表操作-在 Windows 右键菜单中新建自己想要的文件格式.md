@@ -11,7 +11,7 @@ hide_table_of_contents: false
 
 <!-- truncate -->
 
-# 网上的方法
+## 网上的方法
 
 在Bing搜索与GPT询问的方法如出一辙：
 
@@ -22,11 +22,11 @@ hide_table_of_contents: false
 5. 在`ShellNew`键下，选择 **新建** -> **字符串值**，并命名为 `NullFile`。此值通知 Windows 在用户选择新建此类型文件时，应生成一个空的文件。
 6. 重启`explorer`之后应该可以看到新建菜单中出现了想要的文件格式
 
-## 排查问题
+### 排查问题
 
 在实操过程中，重启`explorer`并没有出现`.md`文件格式，开始了排查问题之路
 
-### 修改文件Classes
+#### 修改文件Classes
 
 在评论区看到可以在`计算机\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Discardable\PostSetup\ShellNew`文件夹中双击编辑`Classes`文件，添加`.md`后缀
 
@@ -60,7 +60,7 @@ hide_table_of_contents: false
 
 自此便知道了修改`classes`值的方法是错误的
 
-# 解决办法
+## 解决办法
 
 在网上继续寻找之后发现运行这段注册表编辑文件即可解决
 
