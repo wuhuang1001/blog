@@ -30,7 +30,7 @@ hide_table_of_contents: false
 
 在评论区看到可以在`计算机\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Discardable\PostSetup\ShellNew`文件夹中双击编辑`Classes`文件，添加`.md`后缀
 
-![classes文件](../../assets/240319/classes文件.png)
+![classes文件](../assets/240319/classes文件.png)
 
 这些类型与新建菜单里的类型一一对应，导致我认为该值是新建菜单的配置，于是向着修改这个值的方向前进
 
@@ -38,7 +38,7 @@ hide_table_of_contents: false
 
 修改`classes`值并重启`explorer`之后，新建菜单中并没有出现`.md`，我返回查看`classes`值，发现无法编辑该值，Bing搜索之后得知是权限问题，但修改之后仍无法重新编辑
 
-![classes出错](../../assets/240319/classes出错.png)
+![classes出错](../assets/240319/classes出错.png)
 
 最后发现点击任意项再点击`ShellNew`项，`classes`值仍然可以编辑，并且修改的权限也会回退，因此可以确信并非用户权限问题，再次编辑发现`classes`值并没有修改成功，依旧为修改前的值。
 
@@ -48,13 +48,13 @@ hide_table_of_contents: false
 
 于是我尝试着将`.bat`添加到新建菜单：
 
-![bat添加](../../assets/240319/bat添加.png)
+![bat添加](../assets/240319/bat添加.png)
 
 成功！
 
 并且`classes`值也有了`.bat`
 
-![classes值](../../assets/240319/bat添加classes.png)
+![classes值](../assets/240319/bat添加classes.png)
 
 猜测`classes`值是由系统自动更新，用于展示映射关系而不是配置
 
