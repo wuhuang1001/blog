@@ -148,6 +148,7 @@ const config: Config = {
         'rust',
         'toml',
         'protobuf',
+        'sql',
       ],
       defaultLanguage: 'javascript',
       magicComments: [
