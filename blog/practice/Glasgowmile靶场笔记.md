@@ -12,6 +12,10 @@ hide_table_of_contents: false
 
 <!-- truncate -->
 
+## 使用工具
+
+nmap，dirsearch，cewl，pspy，kali
+
 ## 启动环境
 
 启动虚拟机，自动分配IP `192.168.1.21`
