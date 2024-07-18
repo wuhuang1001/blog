@@ -232,7 +232,6 @@ const config: Config = {
       },
     ],
     */
-    // TODO 搞清楚这里的链接是做什么用的
     [
       './src/plugin/plugin-content-blog', // 插件的路径，这里使用了一个定制版本的 'plugin-content-blog'
       {

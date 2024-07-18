@@ -166,6 +166,8 @@ joomla是一个著名的cms，可以在网络上找到不同版本的漏洞
 
 启动bash方便下一步操作
 
+`python -c "import pty;pty.spawn('/bin/bash')" `
+
 ![15](https://pic.imgdb.cn/item/66488a1cd9c307b7e9b4ab14.png)
 
 ::: note
