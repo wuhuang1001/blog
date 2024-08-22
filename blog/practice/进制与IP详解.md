@@ -8,7 +8,7 @@ date: 2024-08-22
 hide_table_of_contents: false
 ---
 
-欢迎来到本博客。 此博客使用 [**Docusaurus 2**](https://docusaurus.io/) 搭建。
+进制转换与IP地址相关知识
 
 <!-- truncate -->
 
