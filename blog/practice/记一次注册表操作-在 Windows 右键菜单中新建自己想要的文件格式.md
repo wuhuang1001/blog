@@ -4,6 +4,7 @@ description: 通过修改注册表在新建菜单中添加文件格式
 slug: add-md-to-shellnew
 authors: fish
 tags: [个性化配置,windows,regedit]
+date: 2023-03-19
 hide_table_of_contents: false
 ---
 
