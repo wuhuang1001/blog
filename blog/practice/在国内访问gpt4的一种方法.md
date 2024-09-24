@@ -1,5 +1,5 @@
 ---
-title: 国内使用GPT-4的一种方法
+title: 国内使用GPT-4的一种方法(已失效)
 description: 使用coze+slack
 slug: coze-gpt4
 authors: fish
