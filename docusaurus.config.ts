@@ -52,15 +52,22 @@ const config: Config = {
           position: 'right',
           to: 'blog',
         },
+        /*
         {
           label: '项目',
           position: 'right',
           to: 'project',
         },
+        */
         { 
           label: '归档', 
           position: 'right', 
           to: 'blog/archive', 
+        },
+        { 
+          label: '关于', 
+          position: 'right', 
+          to: 'about', 
         },
         /*
         { 
